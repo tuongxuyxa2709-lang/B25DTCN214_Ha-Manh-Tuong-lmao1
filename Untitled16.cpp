@@ -3,18 +3,18 @@
 int main() {
     int x, y;
 
-    // Nh?p hai s? nguyên
+    
     printf("Nhap hai so nguyen x va y: ");
     scanf("%d %d", &x, &y);
 
-    // Tính toán các phép toán s? h?c
+    
     int tong = x + y;
     int hieu = x - y;
     int tich = x * y;
     float thuong;
     int phandu;
 
-    // Ki?m tra chia cho 0
+    
     if (y != 0) {
         thuong = (float)x / y;
         phandu = x % y;
@@ -24,7 +24,7 @@ int main() {
         phandu = 0;
     }
 
-    // In k?t qu?
+   
     printf("\n=== Ket qua cac phep toan ===\n");
     printf("Tong: %d + %d = %d\n", x, y, tong);
     printf("Hieu: %d - %d = %d\n", x, y, hieu);
@@ -34,7 +34,7 @@ int main() {
         printf("Phan du: %d %% %d = %d\n", x, y, phandu);
     }
 
-    // So sánh hai s?
+   
     printf("\n=== Ket qua so sanh ===\n");
     if (x > y)
         printf("%d lon hon %d\n", x, y);
@@ -45,4 +45,5 @@ int main() {
 
     return 0;
 }
+
 
