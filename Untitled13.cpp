@@ -1,23 +1,23 @@
 #include <stdio.h>
-#include <string.h>  // Thu vi?n x? lý chu?i
+#include <string.h>  
 
 int main() {
-    char str[100];  // Khai báo chu?i ký t?
+    char str[100]; 
 
-    // Nh?p chu?i ký t? t? bàn phím
+   
     printf("Nhap mot chuoi ky tu: ");
-    fgets(str, sizeof(str), stdin); // Dùng fgets d? d?c c? kho?ng tr?ng
+    fgets(str, sizeof(str), stdin);
 
-    // Xóa ký t? xu?ng dòng '\n' n?u có trong chu?i
+    
     str[strcspn(str, "\n")] = '\0';
 
-    // Tính d? dài chu?i
+    
     int do_dai = strlen(str);
 
-    // So sánh v?i chu?i "hello"
+   
     int ket_qua = strcmp(str, "hello");
 
-    // In k?t qu?
+    
     printf("\n=== Ket qua xu ly chuoi ===\n");
     printf("Do dai cua chuoi: %d\n", do_dai);
 
@@ -28,4 +28,5 @@ int main() {
 
     return 0;
 }
+
 
